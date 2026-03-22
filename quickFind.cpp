@@ -7,7 +7,7 @@
         id[p] означает - Идентификатор компонента (принадлежность к связанной группе)
  */
 
-static const int N = 6;
+static const int N = 10;
 int main(){
     int i,p,q,id[N];
     for (i = 0; i < N; i ++) id[i] = i;

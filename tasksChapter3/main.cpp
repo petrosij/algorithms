@@ -1,12 +1,18 @@
 #include<iostream>
 #include"linkedList.h"
 using namespace std;
+
+void foo(){
+    linkedList list;
+}
+
 int main(void){
-    linkedList list(42);
-    list.pushFront(int(2));
-    link node1 = list.getHead();
-    do {
-        cout << node1->num << " " << node1->next << endl;
-        node1 = node1->next;
-    } while (node1 != nullptr);
+    linkedList list;
+    list.pushBack(2);
+    list.pushBack(42);
+    list.pushBack(53);
+    list.pushBack(-1);
+    for (linkedList::iterator it = list.begin(); it!=list.end(); ++it ){
+        cout << *it << endl; 
+    }
 }
